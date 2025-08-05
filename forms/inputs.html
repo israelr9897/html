@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend> Personal Information: </legend>
+                <label for="fullname">full name</label>
+                <input required minlength="2" type="text" name="fullname" id="fullname">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+                <label for="phone">phone</label>
+                <input type="tel" name="phone" id="phone">
+            </fieldset>
+            <fieldset>
+                <legend>Ticket & Workshops:</legend>
+                <label for="TicketType">Ticket Type
+                </label>
+                <select required name="TicketType" id="TicketType">
+                    <option value="Standard">Standard</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Student">Student</option>
+                </select>
+                <br>
+
+                <label for="Workshops">Workshops:
+                </label>
+                <input type="checkbox" name="Workshops" id="Workshops" value="Web Performance">Web Performance
+                <input type="checkbox" name="Workshops" id="Workshops" value="Accessibility">Accessibility
+                <input type="checkbox" name="Workshops" id="Workshops" value="Testing">Testing
+                <br>
+
+                <label for="Diet">Diet:
+                </label>
+                <input type="radio" name="Diet" id="Diet" value="None">None
+                <input type="radio" name="Diet" id="Diet" value="Vegan">Vegan
+                <input type="radio" name="Diet" id="Diet" value="Kosher">Kosher
+                <input type="radio" name="Diet" id="Diet" value="Halal">Halal
+                <input type="radio" name="Diet" id="Diet" value="Other">Other
+            </fieldset>
+            <fieldset>
+                <legend>Payment Details:
+                </legend>
+                <label for="Cardnumber">Card number:
+                </label>
+                <input type="number" pattern="[1-9]" minlength="13" maxlength="19" name="Cardnumber" id="Cardnumber">
+                <br>
+
+                <label for="Expirydate">Expiry date:
+                </label>
+                <input type="month" name="Expirydate" id="Expirydate">
+                <br>
+
+                <label for="CVV">CVV:
+                </label>
+                <input minlength="3" maxlength="4" type="password" name="CVV" id="CVV">
+            </fieldset>
+            <fieldset>
+                <legend>Agreements:</legend>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </main>
+
+</body>
+
+</html>
