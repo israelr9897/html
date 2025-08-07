@@ -1,8 +1,20 @@
+body{
+
+    border: 1px black solid;
+    height: 870px;
+    width: 450px;
+    margin-left: 640px;
+    margin-top: 15px;
+    border-radius: 25px;
+
+}
+
 #bar {
     display: block;
     /* position: absolute; */
-    margin-left: 90px;
-    margin-top: 90px;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     /* border: 1px black solid; */
     height: 45px;
     width: 350px;
@@ -15,7 +27,7 @@
     /* border: 1.712px solid #1B1B1B; */
     height: 23px;
     width: 23px;
-    margin-left: 0px;
+    /* margin-left: 0px; */
 }
 
 #notification {
@@ -38,31 +50,31 @@
 
 }
 
-#h2 {
+#Fill-in-with {
     font-size: 18px;
     color: black;
     /* border: 1.712px solid #1B1B1B; */
-    margin-left: 155px;
-    margin-top: 30px;
+    margin-left: 120px;
+    margin-top: 80px;
 
 }
 
-#h3 {
+#Card-holder-name {
     font-size: 17px;
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     color: #B6B6B6;
     /* border: 1.712px solid #1B1B1B; */
-    margin-left: 85px;
+    margin-left: 50px;
     margin-top: 30px;
     
 }
 
 #name {
     height: 73px;
-    width: 381px;
-    margin-left: 85px;
+    width: 330px;
+    margin-left: 50px;
     margin-top: 20px;
     border-radius: 11.41px;
     border: 1.14px solid #CCCCCC;
@@ -72,14 +84,14 @@
 #img-card {
     height: 188.75px;
     width: 350px;
-    margin-left: 90px;
+    margin-left: 40px;
 }
 
 #img-card2 {
     height: 188.75px;
     width: 350px;
-    margin-left: 90px;
-    margin-bottom: -230px;
+    margin-left: 40px;
+    margin-bottom: -220px;
 }
 .botton{
     color: white;
@@ -88,7 +100,7 @@
     height: 65px;
     width: 160px;
     background-color: #7D73C3;
-    margin-left: 310px;
+    margin-left: 230px;
     margin-top: 30px;
     border-radius: 35px;
 }
