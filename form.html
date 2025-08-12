@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body p:nth-child(2){
+            color: red;
+        }
+        body{
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bar{
+            display: flex;
+            gap: 25px;
+            font-weight: 100;
+            font-size: 30px;
+        }
+        .text{
+            font-size: 30px;
+        }
+        .input-email{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #email:required{
+            border: 1px red solid;
+        }
+        #email{
+            border-radius: 7px;
+            width: 300px;
+            padding: 8px;
+            padding-left: 10px;
+        }
+        .get{
+            display: flex;
+            justify-content: unset;
+        }
+        .test p:nth-of-type(1):first-line{
+            font-weight: 700;
+        }
+        .test p:nth-of-type(1):first-letter{
+            font-size: 18px;
+            color: red;
+        }
+        .test p:nth-of-type(2):first-line{
+            font-style: italic;
+        }
+        .test p:nth-of-type(2)::before, .test p:nth-of-type(2)::after{
+            content:'"';
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <section class="bar">
+            <a id="home">Home</a>
+            <a id="blog">Blog</a>
+        </section>
+    </header>
+    <div>
+        <section class="text">
+            <h1>Contact Us</h1>
+        </section>
+        <section class="input-email">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" placeholder="you@example.com">
+            <div class="get">
+                <input type="checkbox" id="get">
+                <label for="get">get daily tips</label>
+            </div>
+        </section>
+    </div>
+    <section class="test">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa dicta harum autem veniam nemo reiciendis beatae officia explicabo laboriosam, sit dolorem eaque quisquam rerum, in molestias ut. Facere, doloremque voluptate.</p>
+        <article>hello</article>
+        <article>world</article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat temporibus debitis nobis numquam qui est.</p>
+        <!-- <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p> -->
+    </section>
+</body>
+</html>

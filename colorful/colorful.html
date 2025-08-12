@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Colorful Blog</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #e6ebf3 30%, #dfe5f0 100%);
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 73vw;
+        }
+
+        #img {
+            /* width: 200px; */
+            width: 25vw;
+            height: 8vh;
+            border-radius: 50px;
+        }
+
+        #head-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px black solid;
+
+        }
+
+        #head-text p {
+            color: #364153;
+            margin: 3px;
+        }
+
+        .tab {
+            display: grid;
+            grid-template-rows: 30px 110px;
+            grid-template-columns: 66% 20% 7% 7%;
+            grid-template-areas:
+                "p-left     label-dark  check-dark  delete"
+                "text       text        text        text"
+            ;
+            border: 1px black solid;
+            background-color: #f0f0fa;
+            width: 60vw;
+
+            height: 20vh;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1.5px #667eea solid;
+            border-radius: 15px;
+            margin-top: 20px;
+            padding: 2%;
+
+        }
+
+        .p-left {
+            grid-area: p-left;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .check-dark {
+            grid-area: check-dark;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            width: 12px;
+        }
+
+        .label-dark {
+            font-size: 10px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+        }
+
+        .delete {
+            grid-area: delete;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        #img-delete {
+            width: 12px;
+            height: 12px;
+        }
+
+        .text {
+            grid-area: text;
+            border: 1px black solid;
+            color: #717182;
+            font-size: 10px;
+        }
+
+        .text::first-line {
+            font-weight: 600;
+        }
+
+        .text::first-letter {
+            display: inline;
+            float: inline-start;
+            color: #46a7b9;
+            font-size: 27px;
+            font-weight: 600;
+            border: 1px black solid;
+            /* margin-top: -4px; */
+            margin: 0px;
+            padding-bottom: -6px;
+        }
+
+        .check-dark:checked~.text {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <img id="img" src="./image.png" alt="">
+            <div id="head-text">
+                <p>Welcome to my vibrant corner of the internet where I share thoughts on web</p>
+                <p>development, technology, and the colorful world of code. Each post has its own</p>
+                <p>personality!</p>
+            </div>
+        </header>
+        <div class="tab">
+            <label class="label-dark" for="check-dark" id="t-dark">Dark mode</label>
+            <input class="check-dark" type="checkbox" name="" id="check-dark">
+            <p class="p-left">Getting Started with React </p>
+            <div class="delete">
+                <img id="img-delete" src="./image copy.png" alt="">
+            </div>
+            <div class="text">
+                <p id="text">React is a powerful JavaScript library for building user interfaces. In this post, we
+                    explore
+                    the fundamentals of component-based architecture and how it can help you create maintainable and
+                    scalable applications. From JSX syntax to state management, discover the key concepts that make
+                    React so
+                    popular among developers.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

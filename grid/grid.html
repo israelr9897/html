@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-rows: 40px 30px 50px;
+            grid-template-columns: repeat(4, 40%);
+            grid-template-areas:
+                "a11 a12 a13"
+                "b21 b22 b23"
+                "c31 c32 c33"
+            ;
+            border: 1px black solid;
+        }
+        .b21{
+            color: blueviolet;
+            grid-area: b21;
+            border: 1px black solid;
+        }
+        .b23{
+            grid-area: b23;
+            border: 1px black solid;
+        }
+        .b22{
+            color: red;
+            grid-area: b22;
+            border: 1px black solid;
+        }
+        .a12{
+            color: red;
+            grid-area: a12;
+            /* border: 1px black solid; */
+        }
+        .c32{
+            color: red;
+            grid-area: c32;
+            /* border: 1px black solid; */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main class="grid">
+        <p class="a12">tghrrthg</p>
+        <p class="b21">tghrrthg</p>
+        <p class="b22">tghrrthg</p>
+        <p class="b23">tghrrthg</p>
+        <p class="c32">tghrrthg</p>
+    </main>
+</body>
+
+</html>
